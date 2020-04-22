@@ -1,0 +1,63 @@
+<!--Make an App component which will render the full resumé-->
+<!--A second stretch would be to use a prop to control the student's name that's being rendered.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sally Student Resume</title>
+    <meta charset="utf-8" name="description" content="All about Sally's accomplishments as a student and an employee.">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <nav>
+    <span>About Me</span> <br>
+    <a href="#education">Education</a> |
+    <a href="#employment_history">Employment History</a> |
+    <a href="#address">Contact Information</a>
+    </nav>
+    <header> 
+        <h1>Sally Student Resume</h1>
+    </header>
+    <main id="resume">
+    </main>
+    <footer>Copyright 2020 Sally A. Student</footer>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        
+        function App() {
+            return (
+                <main>
+                    <section id="education">
+                        <h2>Education</h2>
+                        <ul>
+                            <li>Abraham Lincoln High School, New York, NY Attended: 2008-2012</li>
+                            <li>New York University, New York, NY Attended: 2012-2016</li>
+                        </ul>  
+                    </section>
+                    <section id="employment_history">
+                        <h2>Employment History</h2>
+                        <ul>
+                            <li>Borders Bookstore, 2010-2012 | Job Title: Clerk | Job Description: Lorem Ipsum </li>
+                            <li>Starbucks 2012-2014 | Job Title: Barista | Job Description: Lorem Ipsum </li>
+                            <li>IBM, 2014-2016 | Job Title: Intern | Job Description: Lorem Ipsum </li>
+                        </ul>  
+                    </section>
+                    <address id="address">
+                        <h2>Contact Information</h2>
+                        <h3>Sally Student</h3>
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Image of Sally Student"/>
+                        <p><a href="mailto:sallystudent@gmail.com?subject=Your Resume" target="_blank">Send email to Sally</a></p>
+                        <p>Phone number: 1-895-867-0043</p>
+                    </address>
+                </main>        
+            );
+        };   
+
+        ReactDOM.render(
+            <App />,
+            document.querySelector('#resume')
+        );
+    </script>
+</body>
+</html>

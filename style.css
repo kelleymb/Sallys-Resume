@@ -1,0 +1,90 @@
+/*As a stretch, write some responsive, mobile-first CSS styles for this application 
+to keep practicing those CSS skills. We don't want to go rusty with CSS. */
+
+body {
+    font-size: 18px;
+}
+  
+nav {
+    text-align: center;
+    position: relative;
+}
+
+a {
+    color: darkblue;
+}
+
+h1, h2, h3, p {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+li::before {
+    content: "\a";
+    white-space: pre;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+footer::before {
+    content: "\a";
+    white-space: pre;
+}
+
+@media screen and (min-width: 550px) {
+    
+    nav {
+        font-size: 22px;
+    }
+
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        height: auto;
+    }
+
+}
+
+@media screen and (min-width: 850px) {
+    
+    nav {
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        height: auto;
+    }
+
+    section {
+        width: 350px;
+        margin: 15px;
+    }
+
+}
+  
+  
